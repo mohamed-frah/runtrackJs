@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nom": "Klikha", "prenom": "Youcef", "email": "Klikha.youcef@example.com" },
+    { "id": 2, "nom": "Boubou", "prenom": "Mimou", "email": "Boubou.mimou@example.com" },
+    { "id": 3, "nom": "Kab", "prenom": "Nassim", "email": "Kab.nassim@example.com" }
+  ]
+  
