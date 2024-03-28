@@ -1,45 +1,74 @@
-function filterData() {
-    const formData = new FormData(document.getElementById('filterForm'));
-    
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('filter-form');
+    const idInput = document.getElementById('id');
+    const nameInput = document.getElementById('name');
+    const typeSelect = document.getElementById('type');
+    const resultsDiv = document.getElementById('results');
 
+  
     fetch('pokemon.json')
         .then(response => {
             if (!response.ok) {
-                throw new Error('Erreur de récupération des données');
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
             return response.json();
         })
         .then(data => {
-            const filteredData = data.filter(pokemon => {
-                // Vérifie si chaque Pokemon correspond aux critères de filtrage
-                const id = document.getElementById('id').value;
-                const name = document.getElementById('name').value;
-                const type = document.getElementById('type').value;
-                return (!id || pokemon.id === id) &&
-                       (!name || pokemon.name.toLowerCase().includes(name.toLowerCase())) &&
-                       (!type || pokemon.type === type);
+            const types = new Set();
+            data.forEach(pokemon => {
+                pokemon.type.forEach(type => types.add(type));
             });
-            displayResults(filteredData);
+            types.forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                typeSelect.appendChild(option);
+            });
         })
-        .catch(error => {
-            console.error('Erreur:', error);
+        .catch(e => {
+            console.log('Erreur lors du chargement du fichier JSON', e);
         });
-}
 
-function displayResults(data) {
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = '';
+    
+    function filterData() {
+        const id = idInput.value;
+        const name = nameInput.value.toLowerCase();
+        const type = typeSelect.value;
 
-    if (data.length === 0) {
-        resultsDiv.textContent = 'Aucun résultat trouvé.';
-        return;
+        fetch('pokemon.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const filteredData = data.filter(pokemon => {
+                    return (id === '' || pokemon.id === Number(id)) &&
+                           (name === '' || pokemon.name.english.toLowerCase().includes(name)) &&
+                           (type === '' || pokemon.type.includes(type));
+                });
+
+                displayResults(filteredData);
+            })
+            .catch(e => {
+                console.log('Erreur lors du filtrage des données', e);
+            });
     }
 
-    const ul = document.createElement('ul');
-    data.forEach(pokemon => {
-        const li = document.createElement('li');
-        li.textContent = `ID: ${pokemon.id}, Name: ${pokemon.name}.french , Type: ${pokemon.type}`;
-        ul.appendChild(li);
-    });
-    resultsDiv.appendChild(ul);
-}
+    function displayResults(data) {
+        resultsDiv.innerHTML = ''; 
+        const ul = document.createElement('ul');
+
+        data.forEach(pokemon => {
+            const li = document.createElement('li');
+            li.textContent = `${pokemon.name.english} (ID: ${pokemon.id}, Types: ${pokemon.type.join(', ')})`;
+            ul.appendChild(li);
+        });
+
+        resultsDiv.appendChild(ul);
+    }
+
+    
+    document.getElementById('filter').addEventListener('click', filterData);
+});
