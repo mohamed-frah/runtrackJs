@@ -20,7 +20,11 @@ function validateInscriptionForm() {
     } else {
         document.getElementById('prenomError').innerText = '';
     }
-
+    function validateEmail(email) {
+        // Expression régulière pour valider une adresse email
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
     // Validation de l'email
     if (!validateEmail(email)) {
         document.getElementById('emailError').innerText = 'Adresse email invalide';

@@ -11,8 +11,8 @@ function validateConnexionForm() {
     }
 
     // Validation du mot de passe
-    if (password.length < 6) {
-        document.getElementById('passwordError').innerText = 'Le mot de passe doit contenir au moins 6 caractères';
+    if (password.length < 8) {
+        document.getElementById('passwordError').innerText = 'Le mot de passe doit contenir au moins 8 caractères';
         return;
     } else {
         document.getElementById('passwordError').innerText = '';
