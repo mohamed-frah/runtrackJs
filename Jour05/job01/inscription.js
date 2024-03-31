@@ -7,7 +7,10 @@ function validateInscriptionForm() {
     
     // Validation du nom
     if (nom.trim() === '') {
-        document.getElementById('nomError').innerText = 'Veuillez saisir votre nom';
+        document.getElementById('nomError').innerText = "Veuillez saisir votre nom"
+        return;
+    } else if  (nom.length < 3) {
+        document.getElementById('nomError').innerText = 'Votre nom doit contenire 3 caractéres au minimume';
         return;
     } else {
         document.getElementById('nomError').innerText = '';
@@ -52,7 +55,7 @@ function validateInscriptionForm() {
     } else {
         document.getElementById('confirmPasswordError').innerText = '';
     }
+}
 
     // Si les validations sont réussies, vous pouvez envoyer les données ou effectuer d'autres actions
     console.log('Inscription réussie');
-}
