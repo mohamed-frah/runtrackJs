@@ -1,15 +1,24 @@
 /* les styles poue la nav barre*/
-nav {
-    background-color: #c2bebe;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+nav {
+    background-color: hsl(0, 5%, 91%);
+    overflow: hidden;
+    
+}
+
+
 
 nav a {
     float: left;
     display: block;
-    color: white;
+    color: rgb(54, 54, 54);
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 15px;
     text-decoration: none;
 }
 
@@ -18,8 +27,42 @@ nav a {
 /* Style pour centrer le h1 */
 .titre-principal{
     text-align: center;
+    padding: 10px;
     
 }
 /*    h1   */
 
 /* le background du body */
+body {
+    background-color: #c9c6c6;
+}
+/*     */
+
+/* le texte du milieu */
+.le-titre-du-milieu{
+    background-color: #eae8e8 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+    left: 50vh;
+}
+
+.le-texte-du-milieu{
+    margin: 10px;
+    padding: 10px;
+
+}
+hr{
+    margin: 10px;
+  
+}
+
+
+/*     */
+
+
+/* l'emplacement du tableau  */ 
