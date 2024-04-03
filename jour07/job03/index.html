@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Mon Site</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                    <li><a href="#connexion">Connexion</a></li>
+                    <li><a href="#rechercher">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="creation-compte">
+        <h2>Création de compte</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="civilite">Civilité :</label><br>
+                <input type="radio" id="monsieur" name="civilite" value="monsieur">
+                <label for="monsieur">Monsieur</label>
+                <input type="radio" id="madame" name="civilite" value="madame">
+                <label for="madame">Madame</label>
+            </div>
+            <div>
+                <label for="prenom">Prénom :</label><br>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+            <div>
+                <label for="nom">Nom :</label><br>
+                <input type="text" id="nom" name="nom">
+            </div>
+            <div>
+                <label for="adresse">Adresse :</label><br>
+                <input type="text" id="adresse" name="adresse">
+            </div>
+            <div>
+                <label for="email">Adresse Email :</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Mot de passe :</label><br>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="password-confirm">Confirmation du mot de passe :</label><br>
+                <input type="password" id="password-confirm" name="password-confirm">
+            </div>
+            <div>
+                <label>Passions :</label><br>
+                <input type="checkbox" id="informatique" name="passions" value="informatique">
+                <label for="informatique">Informatique</label><br>
+                <input type="checkbox" id="voyages" name="passions" value="voyages">
+                <label for="voyages">Voyages</label><br>
+                <input type="checkbox" id="sport" name="passions" value="sport">
+                <label for="sport">Sport</label><br>
+                <input type="checkbox" id="lecture" name="passions" value="lecture">
+                <label for="lecture">Lecture</label>
+            </div>
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+
+  
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Mon Site</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a href="#accueil" class="grey-text text-lighten-3">Accueil</a></li>
+                        <li><a href="#inscription" class="grey-text text-lighten-3">Inscription</a></li>
+                        <li><a href="#connexion" class="grey-text text-lighten-3">Connexion</a></li>
+                        <li><a href="#rechercher" class="grey-text text-lighten-3">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
