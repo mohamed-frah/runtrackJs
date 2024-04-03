@@ -39,13 +39,13 @@ nav a {
 
 /* le background du body */
 body {
-    background-color: #884545;
+    background-color: #878585!important;
 }
 /*     */
 
 /* le texte du milieu */
 .le-titre-du-milieu{
-    background-color: #eae8e8 ;
+    background-color: #d7d6d6 ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +78,7 @@ hr{
     left: 175vh;
     bottom: 61vh;
     width: 25vh;
-    background-color: #ffffff;
+    background-color: #fcfcfc;
 }
 
 /*     */
@@ -88,7 +88,7 @@ hr{
 #button {
     background-color: red; /* Couleur de fond rouge */
     color: white; /* Texte en blanc */
-    font-size: 20px; /* Taille de police de 24 pixels */
+    font-size: 20px; /* Taille de police  */
     padding: 7px 14px; /* Espacement interne de 10px en haut/bas et 20px à gauche/droite */
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Coins arrondis */
@@ -112,7 +112,7 @@ hr{
 /* le paragraphe pour le papillon */
 
 .papillon {
-    background-color: #846f6f ;
+    background-color: #f6eaea ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,3 +126,16 @@ hr{
 }
 
 /*    */
+
+/* le bouton de paipllon */
+
+#my-bouton {
+    background-color: #3887ef; /* Couleur de fond rouge */
+    color: white; /* Texte en blanc */
+    font-size: 15px; /* Taille de police  */
+    padding: 7px 10px; /* Espacement interne  en haut/bas    à gauche/droite */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de la souris en forme de main au survol */
+    width: 80%;
+}

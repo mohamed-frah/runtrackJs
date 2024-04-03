@@ -1,0 +1,30 @@
+#game-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: none;
+}
