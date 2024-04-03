@@ -20,65 +20,103 @@
         <h1>LaPlateforme_</h1>
     </div>
 
+    
     <div class="le-titre-du-milieu">
-        
-        <h1 classe = "titre-2"> Bonjour, monde!</h1>
-        
         <div class="le-texte-du-milieu"> 
+            <h1 class="titre-2">Bonjour, monde!</h1>
             <p>Il existe plusieurs visions du terme :
                 <br>
                 le monde est la matère, l'espace et les phénomènes qui nous sont accessibles par les sens, l'expérience ou la raison . <br>
                 le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel. 
                 <hr>
-                 Le sens étendu désigne l'univers dans son ensemnle. 
-
+                Le sens étendu désigne l'univers dans son ensemble. 
             </p>
             <button id="button">Rebooter le Monde</button>
             <p id="expression"></p>
+
+            <nav aria-label="Page navigation example" class="mt-3 d-flex justify-content-end">
+                <ul class="pagination ">
+                    <li class="page-item"><a class="page-link" href="#"><<</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">>></a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-    
-    <div class="tableau">
-        <div class="row">
-            <div class="col">
-                <table class="table table-bordered">
-                    
-                    <tbody>
-                        <tr>
-                            <td>Limbes</td>
-                        </tr>
-                        <tr>
-                            <td>Luxure</td>
-                        </tr>
-                        <tr>
-                            <td>Goumandise</td>
-                        </tr>
-                        <tr>
-                            <td>Avarice</td>
-                        </tr>
-                        <tr>
-                            <td>Colere</td>
-                        </tr>
-                        <tr>
-                            <td>Heresie</td>
-                        </tr>
-                        <tr>
-                            <td>Violence</td>
-                        </tr>
-                        <tr>
-                            <td>Ruse et Tromprie</td>
-                        </tr>
-                        <tr>
-                            <td>Trahison</td>
-                        </tr>
-                        <tr>
-                            <td>Internet exploere</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <style>
+        .page-link:hover {
+            background-color: #3887ef; 
+        }
+    </style>
+        <div class="tableau">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered">
+                        
+                        <tbody>
+                            <tr>
+                                <td class="change-couleur">Limbes</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Luxure</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Goumandise</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Avarice</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Colere</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Heresie</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Violence</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Ruse et Tromprie</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Trahison</td>
+                            </tr>
+                            <tr>
+                                <td class="change-couleur">Internet exploere</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
+        <style>
+            .change-couleur:hover {
+                background-color: #3887ef;
+            }
+        </style>
+
+       <div class="papillon">
+            <div class = "que-la-photo">
+                <img src="./images/papillon.jpg" alt="" class="photo-papi">
+            </div>
+            
+            <div class="paragraph-de-papillon"></div>
+                    <h2>Un Papillon</h2>
+            
+                <p> 
+                    Un papillon, c'est un peu comme une chenille, mais avec des ailes. 
+                    <br>
+                    Ne pas ingerer.
+                </p>
+
+                <button id="my-bouton">Commander votre propre papillon</button>
+                <p id="expression"></p>
+            </div>
+
+        </div>
+   
 
     <!-- Bootstrap JS (optionnel, nécessaire si vous utilisez des fonctionnalités Bootstrap JavaScript) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

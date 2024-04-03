@@ -32,9 +32,14 @@ nav a {
 }
 /*    h1   */
 
+/* mon deuxiem titre */
+.titre-2{
+    margin-top: 20px;
+}
+
 /* le background du body */
 body {
-    background-color: #c9c6c6;
+    background-color: #884545;
 }
 /*     */
 
@@ -65,4 +70,59 @@ hr{
 /*     */
 
 
-/* l'emplacement du tableau  */ 
+/* l'emplacement du tableau  */
+
+
+.tableau{
+    position: relative;
+    left: 175vh;
+    bottom: 61vh;
+    width: 25vh;
+    background-color: #ffffff;
+}
+
+/*     */
+
+
+/* mon bouton */
+#button {
+    background-color: red; /* Couleur de fond rouge */
+    color: white; /* Texte en blanc */
+    font-size: 20px; /* Taille de police de 24 pixels */
+    padding: 7px 14px; /* Espacement interne de 10px en haut/bas et 20px à gauche/droite */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de la souris en forme de main au survol */
+}
+
+
+/*   */
+ 
+
+/* la photo de papillon */
+
+.photo-papi {
+    width: 100%; /* Redimensionne l'image à 50% de sa taille d'origine */
+    height: 100%; /* Garde le ratio hauteur/largeur pour éviter toute déformation */
+}
+
+
+/*   */ 
+
+/* le paragraphe pour le papillon */
+
+.papillon {
+    background-color: #846f6f ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 16%;
+    position: relative;
+    left: 50vh;
+    bottom: 133vh;
+    left :6vh
+}
+
+/*    */
