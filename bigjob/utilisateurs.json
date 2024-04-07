@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nom": "Mahari",
+        "prenom": "oussama",
+        "email": "Oussama.mahari@laplateforme.io",
+        "password": "Messi123@"
+    },
+    {
+        "id": 2,
+        "nom": "Klikha",
+        "prenom": "Youcef",
+        "email": "Youcef.klikha@laplteforme.io",
+        "password": "Yasser123@"
+    }
+]
